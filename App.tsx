@@ -30,6 +30,7 @@ import {
 import Home from './ContextApi_useReducer/Home';
 import ScrollRef from './Refs/ScrollRef';
 import ScrollFlatList from './Refs/ScrollFlatList';
+import Main from './Lyfecycle_methods/Main';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -42,7 +43,7 @@ function App(): JSX.Element {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
-  return <ScrollFlatList />;
+  return <Main />;
 }
 
 const styles = StyleSheet.create({
