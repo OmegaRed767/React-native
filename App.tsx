@@ -32,6 +32,7 @@ import ScrollRef from './Refs/ScrollRef';
 import ScrollFlatList from './Refs/ScrollFlatList';
 import Main from './Lyfecycle_methods/Main';
 import Parent1 from './ErrorBoundries/Parent';
+import Parent2 from './ForwardRef/Parent';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -44,7 +45,7 @@ function App(): JSX.Element {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
-  return <Parent1 />;
+  return <Parent2 />;
 }
 
 const styles = StyleSheet.create({
